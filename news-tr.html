@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>GrassProject - Haberler</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            background-color: #333333;
+        }
+
+        a {
+            color: skyblue;
+        }
+
+        .upsection {
+            background-color: #2B2B2B;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 5%;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        #logo {
+            width: 64px;
+            height: 64px;
+        }
+
+        .nav-buttons {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .nav-button {
+            min-width: 70px;
+            height: 38px;
+            padding: 0 10px;
+            background-color: #2B2B2B;
+            color: skyblue;
+            outline: none;
+            border-radius: 5px;
+            font-size: medium;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: bold;
+            border-style: none;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .nav-button:hover {
+            color: deepskyblue;
+            background-color: #2a2a2a;
+            border-color: #444444;
+            border-style: solid;
+        }
+
+        .nav-button:active {
+            border-style: double;
+            background-color: skyblue;
+            color: #2B2B2B;
+        }
+        
+        #language-select {
+            min-width: 70px;
+            height: 38px;
+            padding: 0 10px;
+            background-color: #2B2B2B;
+            color: skyblue;
+            border-radius: 5px;
+            font-size: medium;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: bold;
+            border-style: none;
+            /* Buton görünümünü bağlantıya (a etiketine) vermek için eklenenler */
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        #language-select:hover {
+            color: deepskyblue;
+            background-color: #2a2a2a;
+            border-color: #444444;
+            border-style: solid;
+        }
+
+        #language-select:active {
+            border-style: solid;
+            background-color: skyblue;
+            color: #2B2B2B;
+        }
+
+        #select {
+            width: 90px;
+            height: 30px;
+            background-color: #2B2B2B;
+            border-color: skyblue;
+            color: skyblue;
+            border-radius: 4px;
+            padding: 2px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .midupsection {
+            background-color: #333333;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .midupsection h1 {
+            font-family: 'Ubuntu', sans-serif;
+            font-size: clamp(1.8rem, 3.5vw, 3.5rem);
+            font-weight: 300;
+            color: white;
+        }
+
+        .midsection {
+            background-color: #333333;
+            padding: 20px 5%;
+            text-align: start;
+            color: white;
+            font-family: 'Ubuntu', sans-serif;
+            flex: 1;
+        }
+
+        .midsection h2 {
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 700;
+        }
+
+        .lowsection {
+            background-color: #333333;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footersection {
+            background-color: #212121;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footersection p {
+            color: white;
+            font-weight: bold;
+            font-size: small;
+            font-family: 'Ubuntu', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    
+    <section class="upsection">
+        <div class="logo">
+            <a href="https://www.grassproject.net">   
+                <img src="48x48.svg" alt="" id="logo"> 
+            </a>
+        </div>
+        
+        <div class="nav-buttons">
+            <a href="home-tr.html">
+                <button class="nav-button">Ev</button>
+            </a>
+
+            <a href="about_us-tr.html">
+                <button class="nav-button">Hakkımızda</button>
+            </a>
+
+            <a href="projects-tr.html">
+                <button class="nav-button">Projeler</button>
+            </a>
+
+            <a href="news-tr.html">
+                <button style="min-width: 70px; height: 38px; padding: 0 10px; background-color: skyblue; color: #2B2B2B; outline: none; border-radius: 5px; font-size: medium; font-family: 'Ubuntu', sans-serif; font-weight: bold; border-style: none; cursor: pointer; white-space: nowrap;">Haberler</button>
+            </a>
+
+            <a href="team-tr.html">
+                <button class="nav-button">Ekip</button>
+            </a>
+        </div>
+
+        <div class="language-select">
+            <a href="index.html" id="language-select">Dil Değiştir</a>
+        </div>
+    </section>
+
+    <section class="midupsection">
+        <h1>Haberler</h1>
+        <br>
+    </section>
+
+    <section class="midsection">
+        <h2 style="padding-left: 10px;">Grass Project Duyurusu - 25 Ağustos 2026</h2>
+        <p style="max-width: 80%; margin-left: 2.5%;">
+            <br>
+            GrassGFX Duyurusu ve Teknik Detaylar
+            <br>
+            <br>
+            Bu doküman; 25 Ağustos 2026 tarihinde duyurulan GrassGFX projesinin temel amaçlarını, mimari yapısını, dağıtım takvimini ve platform destek kapsamını ele almaktadır.
+            <br>
+            <br>
+            1. GrassGFX Projesinin Amacı ve Gelişme Gerekçesi
+            <br>
+            GrassGFX, <a href="https://www.enlightenment.org/" target="_blank" rel="noopener noreferrer">EFL</a> (Enlightenment Foundation Libraries) tabanını temel alarak geliştirilen ve geliştiricilere grafik arayüzler kurma imkânı sunan yeni nesil bir kütüphanedir. Geleneksel <a href="https://www.enlightenment.org/" target="_blank" rel="noopener noreferrer">EFL</a> mimarisinde temel bir arayüz öğesi (widget) oluşturmak için çok sayıda fonksiyonun ardışık olarak çağrılması ve ayrıntılı yapılandırmalar yapılması gerekirken, GrassGFX bu süreci optimize ederek tek bir fonksiyon çağrısıyla aynı öğenin oluşturulabilmesini sağlamaktadır.
+            <br>
+            <br>
+            2. Hibrit Mimari ve Fonksiyon Tasarımı
+            <br>
+            Kütüphanenin en temel avantajlarından biri benimsediği hibrit yapı yaklaşımıdır:
+            <br>
+            - Geliştiriciler istedikleri takdirde arayüz bileşenlerini tek tek fonksiyonlar yardımıyla detaylı bir kontrol mekanizmasıyla inşa edebilirler.
+            <br>
+            - Alternatif olarak, tek bir fonksiyon kullanarak karmaşık arayüz yapılarını hızlı bir şekilde ayağa kaldırabilirler.
+            <br>
+            Ayrıca kütüphane genelinde kullanılan fonksiyon isimleri, geliştirici deneyimini artırmak ve kod yazım sürecini hızlandırmak amacıyla sezgisel bir yapıda tasarlanmıştır.
+            <br>
+            <br>
+            3. Dağıtım Takvimi ve Erken Erişim Süreci
+            <br>
+            GrassGFX projesinin resmi kaynak kod dağıtımının 17 Eylül 2026 tarihinde yapılması planlanmaktadır. 17 Eylül tarihinden önce kütüphaneye ve projenin kaynak kodlarına erken erişim sağlamak isteyen geliştiriciler için çeşitli kullanım kılavuzları, dokümantasyonlar ve açıklayıcı içerikler hazırlanmaktadır.
+            <br>
+            <br>
+            4. Platform Destek Kapsamı ve Dağıtım Politikası
+            <br>
+            -Mevcut Destek (Linux): Şu an için resmi olarak sadece Linux platformu desteklenmektedir.
+            <br>
+            -Gelecek Planı (MacOS, BSD ve Türevleri, Unix Sistemleri): İlerleyen aşamalarda diğer Unix tabanlı ve benzeri platformlara uyarlanarak dağıtımı gerçekleştirilebilir.
+            <br>
+            -Desteklenmeyecek (Windows): Proje politikası gereği Microsoft Windows işletim sistemine yönelik herhangi bir dağıtım veya uyarlama yapılmayacaktır.
+
+
+        </p>
+
+        <br>
+        <hr>
+        <br>
+
+        <h2 style="padding-left: 10px;">Linux'un 35. Yıl Dönümü - 25 Ağustos 2026</h2>
+        <p style="max-width: 80%; margin-left: 2.5%;">
+            <br>
+            Linux Çekirdeğinin 35. Yıl Dönümü ve Kapsamlı Tarihçesi
+            <br>
+            <br>
+            Bu doküman, Linux çekirdeğinin 35. yıl dönümü vesilesiyle, Wikipedia verileri temel alınarak hazırlanmıştır.
+            <br>
+            <br>
+            1. Kuruluş Arka Planı ve İlk Adımlar
+            <br>
+            <a href="https://tr.wikipedia.org/wiki/Linux" target="_blank" rel="noopener noreferrer">Linux</a> çekirdeğinin hikâyesi, 1991 yılında <a href="https://tr.wikipedia.org/wiki/Finlandiya" target="_blank" rel="noopener noreferrer">Finlandiya</a>'nın <a href="https://tr.wikipedia.org/wiki/Helsinki_%C3%9Cniversitesi" target="_blank" rel="noopener noreferrer">Helsinki Üniversitesi</a>'nde bilgisayar bilimi öğrencisi olan <a href="https://tr.wikipedia.org/wiki/Linus_Torvalds" target="_blank" rel="noopener noreferrer">Linus Benedict Torvalds</a>'ın kişisel bir ihtiyaç ve merakla yola çıkmasıyla başlamıştır. O dönem akademik ve ticari ortamlarda yaygın olarak kullanılan <a href="https://tr.wikipedia.org/wiki/Minix" target="_blank" rel="noopener noreferrer">Minix</a> işletim sisteminin kaynak kodlarının kapalı olması, değiştirilememesi ve eğitsel amaçlı lisans kısıtlamaları barındırması, <a href="https://tr.wikipedia.org/wiki/Linus_Torvalds" target="_blank" rel="noopener noreferrer">Torvalds</a>'ı kendi işletim sistemi çekirdeğini sıfırdan tasarlamaya itmiştir.
+            <br>
+            İlk aşamada <a href="https://tr.wikipedia.org/wiki/Intel_80386" target="_blank" rel="noopener noreferrer">Intel 80386</a> mikroişlemcisinin <a href="https://tr.wikipedia.org/wiki/Korumal%C4%B1_kip" target="_blank" rel="noopener noreferrer">korumalı kip</a> özelliklerini doğrudan öğrenmek ve anlamak amacıyla geliştirilmeye başlanan bu hobi projesi, kısa süre içinde <a href="https://tr.wikipedia.org/wiki/POSIX" target="_blank" rel="noopener noreferrer">POSIX</a> standartlarına uyumlu tam teşekküllü bir <a href="https://tr.wikipedia.org/wiki/%C3%87ekirdek_(i%C5%9Fletim_sistemi)" target="_blank" rel="noopener noreferrer">çekirdek</a> altyapısına dönüşmüştür.
+            <br>
+            <br>
+            2. 25 Ağustos 1991 Duyurusu ve FreaX İsmi
+            <br>
+            <a href="https://tr.wikipedia.org/wiki/Linus_Torvalds" target="_blank" rel="noopener noreferrer">Linus Torvalds</a>, 25 Ağustos 1991 tarihinde <a href="https://tr.wikipedia.org/wiki/Usenet" target="_blank" rel="noopener noreferrer">Usenet</a> üzerindeki comp.os.minix haber grubuna gönderdiği meşhur mesajla projesini dünyaya duyurmuştur. Bu tarihte atılan temel adım, günümüzdeki devasa <a href="https://tr.wikipedia.org/wiki/A%C3%A7%C4%B1k_kaynak" target="_blank" rel="noopener noreferrer">açık kaynak</a> ekosisteminin miladı kabul edilmektedir.
+            <br>
+            <a href="https://tr.wikipedia.org/wiki/Linus_Torvalds" target="_blank" rel="noopener noreferrer">Torvalds</a>, projenin kaynak kodlarını barındıran FTP sunucusuna ilk olarak "Free" (Özgür) ve "freak" (ucube/kaçık) kelimelerinin birleşimi olan "FreaX" adını vermiştir. Ancak FTP sunucusunun yöneticisi olan Ari Lemmke, bu ismi beğenmeyerek sunucudaki dizin adını Linus'un adından esinlenerek "Linux" olarak değiştirmiş ve proje resmi olarak bu isimle anılmaya başlanmıştır.
+            <br>
+            <br>
+            3. GNU Projesi ile Entegrasyon ve GPL Lisansı
+            <br>
+            İlk sürümlerde kendine ait bir derleyici veya sistem araç seti bulunmayan Linux çekirdeği, <a href="https://tr.wikipedia.org/wiki/Richard_Stallman" target="_blank" rel="noopener noreferrer">Richard Stallman</a> liderliğindeki <a href="https://tr.wikipedia.org/wiki/GNU_Projesi" target="_blank" rel="noopener noreferrer">GNU Projesi</a> tarafından geliştirilen özgür yazılım bileşenleriyle (<a href="https://tr.wikipedia.org/wiki/GNU_Derleyici_Koleksiyonu" target="_blank" rel="noopener noreferrer">GCC</a>, <a href="https://tr.wikipedia.org/wiki/Bash" target="_blank" rel="noopener noreferrer">bash</a>, Coreutils vb.) birleşmiştir. <a href="https://tr.wikipedia.org/wiki/GNU" target="_blank" rel="noopener noreferrer">GNU</a> kullanıcı alanı araçları ile Linux çekirdeğinin bir araya gelmesi, tam anlamıyla çalışabilir ve özgür bir işletim sistemi ekosistemini (<a href="https://tr.wikipedia.org/wiki/GNU" target="_blank" rel="noopener noreferrer">GNU</a>/<a href="https://tr.wikipedia.org/wiki/Linux" target="_blank" rel="noopener noreferrer">Linux</a>) ortaya çıkarmıştır.
+            <br>
+            Proje ilk başta ticari olmayan kısıtlayıcı bir lisansla dağıtılırken, 1992 yılında **GNU Genel Kamu Lisansı** (<a href="https://tr.wikipedia.org/wiki/GNU_Genel_Kamu_Lisans%C4%B1" target="_blank" rel="noopener noreferrer">GPL</a>) altına taşınmıştır. Bu hamle, dünya genelindeki yazılımcıların kod üzerinde özgürce değişiklik yapmasını, geliştirmesini ve katkı sunmasını sağlayarak projenin büyümesini patlayıcı bir hıza ulaştırmıştır.
+            <br>
+            <br>
+            4. Tarihsel Kronoloji ve Kilometre Taşları
+            <br>
+            - 25 Ağustos 1991 (İlk Duyuru): <a href="https://tr.wikipedia.org/wiki/Linus_Torvalds" target="_blank" rel="noopener noreferrer">Linus Torvalds</a> tarafından comp.os.minix grubunda projenin ilanı.
+            <br>
+            - 17 Eylül 1991 (0.01 Sürümü): Çekirdeğin kaynak kodlarını içeren ilk resmi sürümü halka açık olarak yayımlandı.
+            <br>
+            - 1992 (GPL Lisansına Geçiş): Kodlar GNU <a href="https://tr.wikipedia.org/wiki/GNU_Genel_Kamu_Lisans%C4%B1" target="_blank" rel="noopener noreferrer">GPL</a> altına alındı ve ilk Linux dağıtımları şekillenmeye başladı.
+            <br>
+            - 1994 (Sürüm 1.0): Kararlı ağ yığını ve çoklu görev desteğiyle tam sürüm yayımlandı; ticari dağıtımlar doğdu.
+            <br>
+            - 1996 (Sürüm 2.0 ve Maskot): Çoklu işlemci (<a href="https://en.wikipedia.org/wiki/Symmetric_multiprocessing" target="_blank" rel="noopener noreferrer">SMP</a>) desteği ve <a href="https://tr.wikipedia.org/wiki/Larry_Ewing" target="_blank" rel="noopener noreferrer">Larry Ewing</a> tarafından tasarlanan <a href="https://tr.wikipedia.org/wiki/Tux" target="_blank" rel="noopener noreferrer">Tux</a> pengueni resmi maskot oldu.
+            <br>
+            - 2003 (Enterprise Linux Dönemi): Kurumsal sunucu pazarında <a href="https://tr.wikipedia.org/wiki/Red_Hat_Enterprise_Linux" target="_blank" rel="noopener noreferrer">Red Hat Enterprise Linux</a> ve <a href="https://tr.wikipedia.org/wiki/SUSE_Linux_Enterprise" target="_blank" rel="noopener noreferrer">SUSE</a> gibi çözümler standart hâle geldi.
+            <br>
+            - 2011 - Günümüz (Modern Çekirdek Serileri): <a href="https://tr.wikipedia.org/wiki/Bulut_bili%C5%9Fim" target="_blank" rel="noopener noreferrer">Bulut bilişim</a>, mobil sistemler (<a href="https://tr.wikipedia.org/wiki/Android_(i%C5%9Fletim_sistemi)" target="_blank" rel="noopener noreferrer">Android</a>) ve süper bilgisayarlarda küresel hâkimiyet.
+            <br>
+            <br>
+            5. Mimari Yapı ve Küresel Ekosistemdeki Yeri
+            <br>
+            <a href="https://tr.wikipedia.org/wiki/Linux" target="_blank" rel="noopener noreferrer">Linux</a>, <a href="https://tr.wikipedia.org/wiki/Monolitik_%C3%A7ekirdek" target="_blank" rel="noopener noreferrer">monolitik çekirdek</a> mimarisine sahip olmakla birlikte, dinamik yüklenebilir sürücü modülleri sayesinde son derece esnek bir yapı sergiler. <a href="https://tr.wikipedia.org/wiki/Unix" target="_blank" rel="noopener noreferrer">Unix</a> benzeri tasarımı sayesinde yüksek performans, kararlılık ve güvenlik sunar.
+            <br>
+            Günümüzde Linux çekirdeği;
+            <br>
+            - Dünyadaki süper bilgisayarların tamamına yakınında,
+            <br>
+            - Milyarlarca akıllı telefonda (<a href="https://tr.wikipedia.org/wiki/Android_(i%C5%9Fletim_sistemi)" target="_blank" rel="noopener noreferrer">Android</a> tabanlı altyapıda),
+            <br>
+            - Küresel bulut sunucularında, web altyapılarında ve gömülü sistemlerde omurga görevi görmektedir.
+        </p>
+    </section>
+    
+    <section class="lowsection">
+        <br>
+    </section>
+
+    <section class="footersection">
+        <p>Telif Hakkı © 2026 Grass Project Ekibi Tüm Hakları Saklıdır</p>
+    </section>
+</body>
+</html>

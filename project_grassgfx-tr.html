@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>GrassProject - GrassGFX</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            background-color: #333333;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        a {
+            color: skyblue;
+        }
+
+        .upsection {
+            background-color: #2B2B2B;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 5%;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        #logo {
+            width: 64px;
+            height: 64px;
+        }
+
+        .nav-buttons {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .nav-button {
+            min-width: 70px;
+            height: 38px;
+            padding: 0 10px;
+            background-color: #2B2B2B;
+            color: skyblue;
+            outline: none;
+            border-radius: 5px;
+            font-size: medium;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: bold;
+            border-style: none;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .nav-button:hover {
+            color: deepskyblue;
+            background-color: #2a2a2a;
+            border-color: #444444;
+            border-style: solid;
+        }
+
+        .nav-button:active {
+            border-style: double;
+            background-color: skyblue;
+            color: #2B2B2B;
+        }
+        
+        #language-select {
+            min-width: 70px;
+            height: 38px;
+            padding: 0 10px;
+            background-color: #2B2B2B;
+            color: skyblue;
+            border-radius: 5px;
+            font-size: medium;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: bold;
+            border-style: none;
+            /* Buton görünümünü bağlantıya (a etiketine) vermek için eklenenler */
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        #language-select:hover {
+            color: deepskyblue;
+            background-color: #2a2a2a;
+            border-color: #444444;
+            border-style: solid;
+        }
+
+        #language-select:active {
+            border-style: solid;
+            background-color: skyblue;
+            color: #2B2B2B;
+        }
+
+        #select {
+            width: 90px;
+            height: 30px;
+            background-color: #2B2B2B;
+            border-color: skyblue;
+            color: skyblue;
+            border-radius: 4px;
+            padding: 2px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .midupsection {
+            background-color: #333333;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .midupsection h1 {
+            font-family: 'Ubuntu', sans-serif;
+            font-size: clamp(1.8rem, 3.5vw, 3.5rem);
+            font-weight: 300;
+            color: white;
+        }
+
+        .midsection {
+            background-color: #333333;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        .pratical {
+            color: white;
+            margin-right: 5vh;
+            font-size: xx-large;
+            font-family: 'Ubuntu', sans-serif;
+            text-align: left;
+        }
+
+        .minimal {
+            color: white;
+            font-size: xx-large;
+            font-family: 'Ubuntu', sans-serif;
+            text-align: left;
+        }
+
+        .functional {
+            color: white;
+            margin-left: 20vh;
+            font-size: xx-large;
+            font-family: 'Ubuntu', sans-serif;
+            text-align: left;
+        }
+
+        .lowsection {
+            background-color: #333333;
+            padding: 20px;
+            text-align: center;
+            flex: 1;
+        }
+
+        .footersection {
+            background-color: #212121;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footersection p {
+            color: white;
+            font-weight: bold;
+            font-size: small;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <section class="upsection">
+        <div class="logo">
+            <a href="https://www.grassproject.net">   
+                <img src="48x48.svg" alt="" id="logo"> 
+            </a>
+        </div>
+        
+        <div class="nav-buttons">
+         <a href="home-tr.html">
+                <button class="nav-button">Ev</button>
+            </a>
+
+            <a href="about_us-tr.html">
+                <button class="nav-button">Hakkımızda</button>
+            </a>
+
+            <a href="projects-tr.html">
+                <button class="nav-button">Projeler</button>
+            </a>
+
+            <a href="news-tr.html">
+                <button class="nav-button">Haberler</button>
+            </a>
+
+            <a href="team-tr.html">
+                <button class="nav-button">Ekip</button>
+            </a>
+
+        </div>
+
+        <div class="language-select">
+            <a href="index.html" id="language-select">Dil Değiştir</a>
+        </div>
+    </section>
+
+    <section class="midupsection">
+        <h1>GrassGFX</h1>
+    </section>
+
+    <section class="midsection">
+
+        <div class="pratical"><h3>Pratik</h3><p style="max-width: 350px; text-align: left; font-size: x-large; font-weight: lighter; font-family: 'Ubuntu', sans-serif;">Bir obje yaparken çok fazla fonksiyon yazmaya gerek kalmaz.</p></div>
+
+        <div class="minimal"><h3>Minimal</h3><p style="max-width: 350px; text-align: left; font-size: x-large; font-weight: lighter; font-family: 'Ubuntu', sans-serif;"><a href="https://www.enlightenment.org">Efl</a>'ye göre daha akılda kalıcı ve basit fonksiyon isimlendirilmesi.</p></div>
+
+        <div class="functional"><h3>İşlevsel</h3><p style="max-width: 350px; text-align: left; font-size: x-large; font-weight: lighter; font-family: 'Ubuntu', sans-serif;">Özelleştirilme seviyesi fazla olan kütüphane tabanlı olduğu için istediğimiz arayüzleri neredeyse yapabiliriz.</p></div>
+        
+    </section>
+    
+    <section class="lowsection">
+        <h1 style="font-family: 'Ubuntu', sans-serif; color: white;"></h1>
+    </section>
+
+    <section class="footersection">
+        <p>Telif Hakkı © 2026 Grass Project Ekibi Tüm Hakları Saklıdır</p>
+    </section>
+</body>
+</html>
