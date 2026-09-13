@@ -1,0 +1,163 @@
+GFX Library Documentation - C API Reference
+
+================================================================
+GENERAL FUNCTIONS
+================================================================
+
+- gfx_init(int argc, char **argv)
+  Description: Initializes the graphics library and the underlying Elementary environment (wraps elm_init).
+
+- gfx_run(void)
+  Description: Starts the main application event loop and keeps the GUI running (wraps elm_run).
+
+- gfx_exit(void)
+  Description: Triggers an exit from the main event loop (wraps elm_exit).
+
+- gfx_shutdown(void)
+  Description: Shuts down the library and frees allocated system resources (wraps elm_shutdown).
+
+
+================================================================
+WINDOW FUNCTIONS
+================================================================
+
+- gfx_object_add_feature_window(const char *name, const char *title)
+  Description: Creates and returns a standard feature window using the specified name and title.
+
+- gfx_object_add_standard_window(Evas_Object *parent, const char *name, Elm_Win_Type type)
+  Description: Adds a standard window based on the given parent object, name, and window type.
+
+- gfx_window_set_title(Evas_Object *object, const char *title)
+  Description: Sets the text displayed in the title bar of the window.
+
+- gfx_window_set_autodel(Evas_Object *object, Eina_Bool autodel)
+  Description: Determines whether the window should be automatically deleted from memory when closed.
+
+- gfx_window_set_center(Evas_Object *object, Eina_Bool h, Eina_Bool v)
+  Description: Centers the window horizontally and/or vertically on the screen.
+
+- gfx_window_set_minsize(Evas_Object *object, int w, int h)
+  Description: Sets the minimum size base (width and height) constraints for the window.
+
+- gfx_window_set_fullscreen(Evas_Object *object, Eina_Bool full)
+  Description: Toggles the fullscreen mode of the window.
+
+- gfx_window_set_active(Evas_Object *object)
+  Description: Activates and focuses the window.
+
+- gfx_window_set_iconified(Evas_Object *object, Eina_Bool iconified)
+  Description: Minimizes or restores the window from iconified state.
+
+- gfx_window_set_sticky(Evas_Object *object, Eina_Bool sticky)
+  Description: Sets whether the window remains visible across all virtual desktops.
+
+- gfx_window_ratio_scale(Evas_Object *object, Evas_Object *subobject)
+  Description: Attaches a resizable subobject/widget to the window.
+
+
+================================================================
+WIDGET CREATION FUNCTIONS
+================================================================
+
+- gfx_object_add_button(Evas_Object *parent)
+  Description: Creates a clickable button widget.
+
+- gfx_object_add_checkbutton(Evas_Object *parent)
+  Description: Creates a checkable checkbox widget.
+
+- gfx_object_add_radiobutton(Evas_Object *parent)
+  Description: Creates a radio button widget for exclusive option selection.
+
+- gfx_object_add_entry(Evas_Object *parent)
+  Description: Creates a text entry widget for user text input and editing.
+
+- gfx_object_add_slider(Evas_Object *parent)
+  Description: Creates a slider widget to select a value within a specific range.
+
+- gfx_object_add_spinner(Evas_Object *parent)
+  Description: Creates a spinner widget for numerical value selection using increment/decrement buttons.
+
+- gfx_object_add_combobox(Evas_Object *parent)
+  Description: Creates a combo box widget with a drop-down list of choices.
+
+- gfx_object_add_label(Evas_Object *parent)
+  Description: Creates a label widget to display static text or descriptions.
+
+- gfx_object_add_icon(Evas_Object *parent)
+  Description: Creates an icon widget to display graphical symbols.
+
+- gfx_object_add_image(Evas_Object *parent)
+  Description: Creates an image widget to load and display picture files.
+
+- gfx_object_add_progressbar(Evas_Object *parent)
+  Description: Creates a progress bar widget to visually indicate task completion percentage.
+
+- gfx_object_add_bubble(Evas_Object *parent)
+  Description: Creates a message bubble widget.
+
+- gfx_object_add_clock(Evas_Object *parent)
+  Description: Creates a digital or analog clock widget.
+
+- gfx_object_add_calendar(Evas_Object *parent)
+  Description: Creates a calendar widget for date selection.
+
+- gfx_object_add_separator(Evas_Object *parent)
+  Description: Creates a horizontal or vertical divider line to separate interface elements.
+
+
+================================================================
+BOX LAYOUT FUNCTIONS
+================================================================
+
+- gfx_object_add_box(Evas_Object *parent)
+  Description: Creates a container box widget to arrange other child widgets.
+
+- gfx_box_set_horizontal(Evas_Object *object, Eina_Bool horizontal)
+  Description: Sets the layout direction of the box to horizontal or vertical.
+
+- gfx_box_get_horizontal(const Evas_Object *object)
+  Description: Queries whether the box layout direction is currently horizontal.
+
+- gfx_box_pack_start(Evas_Object *object, Evas_Object *child)
+  Description: Packs a new child object at the beginning of the box.
+
+- gfx_box_pack_end(Evas_Object *object, Evas_Object *child)
+  Description: Packs a new child object at the end of the box.
+
+- gfx_box_pack_before(Evas_Object *object, Evas_Object *child, Evas_Object *before)
+  Description: Packs a new child object immediately before an existing child object.
+
+- gfx_box_pack_after(Evas_Object *object, Evas_Object *child, Evas_Object *after)
+  Description: Packs a new child object immediately after an existing child object.
+
+- gfx_box_unpack(Evas_Object *object, Evas_Object *child)
+  Description: Removes a specified child object from the box container.
+
+- gfx_box_unpack_all(Evas_Object *object)
+  Description: Removes all child objects currently contained within the box.
+
+- gfx_box_set_homogeneous(Evas_Object *object, Eina_Bool homogeneous)
+  Description: Sets whether all items in the box should be allocated equal space.
+
+- gfx_box_get_homogeneous(Evas_Object *object)
+  Description: Queries whether the box layout is homogeneous.
+
+- gfx_box_set_padding(Evas_Object *object, Evas_Coord horizontal, Evas_Coord vertical)
+  Description: Sets the horizontal and vertical spacing gaps between elements inside the box.
+
+- gfx_box_get_padding(Evas_Object *object, Evas_Coord *horizontal, Evas_Coord *vertical)
+  Description: Retrieves the current horizontal and vertical padding values of the box.
+
+- gfx_box_set_align(Evas_Object *object, double horizontal, double vertical)
+  Description: Sets the alignment ratios for elements inside the box container.
+
+- gfx_box_get_align(Evas_Object *object, double *horizontal, double *vertical)
+  Description: Retrieves the alignment ratios of the box container.
+
+- gfx_box_get_children(const Evas_Object *object)
+  Description: Returns a linked list containing all child objects currently inside the box.
+
+================================================================
+NOTE
+================================================================
+The library is still under development, so it is normal for it to look sparse and plain.
