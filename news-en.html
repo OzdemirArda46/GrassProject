@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>GrassProject - News</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            background-color: #333333;
+        }
+
+        a {
+            color: skyblue;
+        }
+
+        .upsection {
+            background-color: #2B2B2B;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 5%;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        #logo {
+            width: 64px;
+            height: 64px;
+        }
+
+        .nav-buttons {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .nav-button {
+            min-width: 70px;
+            height: 38px;
+            padding: 0 10px;
+            background-color: #2B2B2B;
+            color: skyblue;
+            outline: none;
+            border-radius: 5px;
+            font-size: medium;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: bold;
+            border-style: none;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .nav-button:hover {
+            color: deepskyblue;
+            background-color: #2a2a2a;
+            border-color: #444444;
+            border-style: solid;
+        }
+
+        .nav-button:active {
+            border-style: double;
+            background-color: skyblue;
+            color: #2B2B2B;
+        }
+        
+        #language-select {
+            min-width: 70px;
+            height: 38px;
+            padding: 0 10px;
+            background-color: #2B2B2B;
+            color: skyblue;
+            border-radius: 5px;
+            font-size: medium;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: bold;
+            border-style: none;
+            /* Buton görünümünü bağlantıya (a etiketine) vermek için eklenenler */
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        #language-select:hover {
+            color: deepskyblue;
+            background-color: #2a2a2a;
+            border-color: #444444;
+            border-style: solid;
+        }
+
+        #language-select:active {
+            border-style: solid;
+            background-color: skyblue;
+            color: #2B2B2B;
+        }
+
+        #select {
+            width: 90px;
+            height: 30px;
+            background-color: #2B2B2B;
+            border-color: skyblue;
+            color: skyblue;
+            border-radius: 4px;
+            padding: 2px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .midupsection {
+            background-color: #333333;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .midupsection h1 {
+            font-family: 'Ubuntu', sans-serif;
+            font-size: clamp(1.8rem, 3.5vw, 3.5rem);
+            font-weight: 300;
+            color: white;
+        }
+
+        .midsection {
+            background-color: #333333;
+            padding: 20px 5%;
+            text-align: start;
+            color: white;
+            font-family: 'Ubuntu', sans-serif;
+            flex: 1;
+        }
+
+        .midsection h2 {
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 700;
+        }
+
+        .lowsection {
+            background-color: #333333;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footersection {
+            background-color: #212121;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footersection p {
+            color: white;
+            font-weight: bold;
+            font-size: small;
+            font-family: 'Ubuntu', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    
+    <section class="upsection">
+        <div class="logo">
+            <a href="https://www.grassproject.net">   
+                <img src="48x48.svg" alt="" id="logo"> 
+            </a>
+        </div>
+        
+        <div class="nav-buttons">
+            <a href="home-en.html">
+                <button class="nav-button">Home</button>
+            </a>
+
+            <a href="about_us-en.html">
+                <button class="nav-button">About Us</button>
+            </a>
+
+            <a href="projects-en.html">
+                <button class="nav-button">Projects</button>
+            </a>
+
+            <a href="news-en.html">
+                <button style="min-width: 70px; height: 38px; padding: 0 10px; background-color: skyblue; color: #2B2B2B; outline: none; border-radius: 5px; font-size: medium; font-family: 'Ubuntu', sans-serif; font-weight: bold; border-style: none; cursor: pointer; white-space: nowrap;">News</button>
+            </a>
+
+            <a href="team-en.html">
+                <button class="nav-button">Team</button>
+            </a>
+        </div>
+
+        <div class="language-select">
+            <a href="index.html" id="language-select">Change Language</a>
+        </div>
+    </section>
+
+    <section class="midupsection">
+        <h1>News</h1>
+        <br>
+    </section>
+
+    <section class="midsection">
+        <h2 style="padding-left: 10px;">Grass Project Announcement - August 25, 2026</h2>
+        <p style="max-width: 80%; margin-left: 2.5%;">
+            <br>
+            GrassGFX Announcement and Technical Details
+            <br>
+            <br>
+            This document outlines the primary objectives, architectural structure, rollout schedule, and platform support scope of the GrassGFX project, which was announced on August 25, 2026.
+            <br>
+            <br>
+            1. Purpose and Rationale for the Development of the GrassGFX Project
+            <br>
+            GrassGFX is a next-generation library built upon the <a href="https://www.enlightenment.org" target="_blank" rel="noopener noreferrer">EFL</a> (Enlightenment Foundation Libraries) framework that enables developers to create graphical interfaces. While the traditional <a href="https://www.enlightenment.org" target="_blank" rel="noopener noreferrer">EFL</a> architecture requires a series of function calls and detailed configurations to create a basic interface element (widget), GrassGFX optimizes this process, allowing the same element to be created with a single function call.
+            <br>
+            <br>
+            2. Hybrid Architecture and Functional Design
+            <br>
+            One of the library's most fundamental advantages is the hybrid structural approach it adopts:
+            <br>
+            - Developers can build interface components individually using functions and a detailed control mechanism, if they wish.
+            <br>
+            - Alternatively, they can rapidly set up complex interface structures using a single function.
+            <br>
+            Furthermore, the function names used throughout the library have been designed with an intuitive structure to enhance the developer experience and accelerate the coding process.
+            <br>
+            <br>
+            3. Distribution Schedule and Early Access Process
+            <br>
+            The official source code release of the GrassGFX project is scheduled for September 17, 2026. Various user guides, documentation, and explanatory materials are being prepared for developers who wish to gain early access to the library and the project's source code prior to that date.
+            <br>
+            <br>
+            4. Platform Support Scope and Distribution Policy
+            <br>
+            -Current Support (Linux): Currently, only the Linux platform is officially supported.
+            <br>
+            -Future Plan (macOS, BSD and derivatives, Unix systems): In subsequent stages, it could be adapted for and distributed on other Unix-based and similar platforms.
+            <br>
+            -Not supported (Windows): In accordance with project policy, no distribution or port for the Microsoft Windows operating system will be produced.
+            <br>
+        <br>
+        <hr>
+        <br>
+        </p>
+
+        <h2 style="padding-left: 10px;">Linux's 35th Anniversary - August 25, 2026</h2>
+        <p style="max-width: 80%; margin-left: 2.5%;">
+            <br>
+            35th Anniversary of the Linux Kernel and Comprehensive History
+            <br>
+            <br>
+            This document has been prepared on the occasion of the 35th anniversary of the Linux kernel, based on Wikipedia data.
+            <br>
+            <br>
+            1. Background and Initial Steps
+            <br>
+            <a href="https://en.wikipedia.org/wiki/Linux" target="_blank" rel="noopener noreferrer">Linux</a> kernel's story began in 1991 when <a href="https://en.wikipedia.org/wiki/Linus_Torvalds" target="_blank" rel="noopener noreferrer">Linus Benedict Torvalds</a>, a computer science student at the <a href="https://en.wikipedia.org/wiki/University_of_Helsinki" target="_blank" rel="noopener noreferrer">University of Helsinki</a> in <a href="https://en.wikipedia.org/wiki/Finland" target="_blank" rel="noopener noreferrer">Finland</a>, set out with a personal need and curiosity. At that time, the <a href="https://en.wikipedia.org/wiki/Minix" target="_blank" rel="noopener noreferrer">Minix</a> operating system, widely used in academic and commercial environments, had closed source codes, could not be modified, and contained educational license restrictions, which drove <a href="https://en.wikipedia.org/wiki/Linus_Torvalds" target="_blank" rel="noopener noreferrer">Torvalds</a> to design his own operating system kernel from scratch.
+            <br>
+            Initially developed to directly learn and understand the <a href="https://en.wikipedia.org/wiki/Protected_mode" target="_blank" rel="noopener noreferrer">protected mode</a> features of the <a href="https://en.wikipedia.org/wiki/I386" target="_blank" rel="noopener noreferrer">Intel 80386</a> microprocessor, this hobby project quickly evolved into a fully fledged <a href="https://en.wikipedia.org/wiki/Kernel_(operating_system)" target="_blank" rel="noopener noreferrer">kernel</a> infrastructure compliant with <a href="https://en.wikipedia.org/wiki/POSIX" target="_blank" rel="noopener noreferrer">POSIX</a> standards.
+            <br>
+            <br>
+            2. Announcement of August 25, 1991 and the Name FreaX
+            <br>
+            <a href="https://en.wikipedia.org/wiki/Linus_Torvalds" target="_blank" rel="noopener noreferrer">Linus Torvalds</a> announced his project to the world with his famous message sent to the comp.os.minix newsgroup on <a href="https://en.wikipedia.org/wiki/Usenet" target="_blank" rel="noopener noreferrer">Usenet</a> on August 25, 1991. The foundational step taken on this date is considered the dawn of today's massive <a href="https://en.wikipedia.org/wiki/Open-source_software" target="_blank" rel="noopener noreferrer">open-source</a> ecosystem.
+            <br>
+            <a href="https://en.wikipedia.org/wiki/Linus_Torvalds" target="_blank" rel="noopener noreferrer">Torvalds</a> initially named the FTP server hosting the project's source code "FreaX," a combination of the words "Free" and "freak." However, Ari Lemmke, the administrator of the FTP server, did not like this name and changed the directory name on the server to "Linux" inspired by Linus's name, and the project officially began to be called by this name.
+            <br>
+            <br>
+            3. Integration with the GNU Project and the GPL License
+            <br>
+            Lacking its own compiler or system toolset in its early versions, the Linux kernel merged with free software components (<a href="https://en.wikipedia.org/wiki/GNU_Compiler_Collection" target="_blank" rel="noopener noreferrer">GCC</a>, <a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)" target="_blank" rel="noopener noreferrer">bash</a>, Coreutils, etc.) developed by the <a href="https://en.wikipedia.org/wiki/GNU_Project" target="_blank" rel="noopener noreferrer">GNU Project</a> led by <a href="https://en.wikipedia.org/wiki/Richard_Stallman" target="_blank" rel="noopener noreferrer">Richard Stallman</a>. The combination of <a href="https://en.wikipedia.org/wiki/GNU" target="_blank" rel="noopener noreferrer">GNU</a> user space tools and the Linux kernel gave birth to a fully operational and free operating system ecosystem (<a href="https://en.wikipedia.org/wiki/GNU" target="_blank" rel="noopener noreferrer">GNU</a>/<a href="https://en.wikipedia.org/wiki/Linux" target="_blank" rel="noopener noreferrer">Linux</a>).
+            <br>
+            While the project was initially distributed under a restrictive non-commercial license, it was moved under the **GNU General Public License** (<a href="https://en.wikipedia.org/wiki/GNU_General_Public_License" target="_blank" rel="noopener noreferrer">GPL</a>) in 1992. This move enabled developers worldwide to freely modify, develop, and contribute to the code, accelerating the project's growth to an explosive pace.
+            <br>
+            <br>
+            4. Historical Chronology and Milestones
+            <br>
+            - August 25, 1991 (First Announcement): Proclamation of the project by <a href="https://en.wikipedia.org/wiki/Linus_Torvalds" target="_blank" rel="noopener noreferrer">Linus Torvalds</a> in the comp.os.minix group.
+            <br>
+            - September 17, 1991 (Version 0.01): The first official release containing the kernel's source code was publicly published.
+            <br>
+            - 1992 (Transition to GPL License): The code was placed under GNU <a href="https://en.wikipedia.org/wiki/GNU_General_Public_License" target="_blank" rel="noopener noreferrer">GPL</a> and the first Linux distributions began to take shape.
+            <br>
+            - 1994 (Version 1.0): Full version released with a stable network stack and multitasking support; commercial distributions were born.
+            <br>
+            - 1996 (Version 2.0 and Mascot): Symmetric multiprocessing (<a href="https://en.wikipedia.org/wiki/Symmetric_multiprocessing" target="_blank" rel="noopener noreferrer">SMP</a>) support and <a href="https://en.wikipedia.org/wiki/Tux" target="_blank" rel="noopener noreferrer">Tux</a> the penguin, designed by <a href="https://en.wikipedia.org/wiki/Larry_Ewing" target="_blank" rel="noopener noreferrer">Larry Ewing</a>, became the official mascot.
+            <br>
+            - 2003 (Enterprise Linux Era): Solutions like <a href="https://en.wikipedia.org/wiki/Red_Hat_Enterprise_Linux" target="_blank" rel="noopener noreferrer">Red Hat Enterprise Linux</a> and <a href="https://en.wikipedia.org/wiki/SUSE_Linux_Enterprise" target="_blank" rel="noopener noreferrer">SUSE</a> became standard in the enterprise server market.
+            <br>
+            - 2011 - Present (Modern Kernel Series): Global dominance in <a href="https://en.wikipedia.org/wiki/Cloud_computing" target="_blank" rel="noopener noreferrer">cloud computing</a>, mobile systems (<a href="https://en.wikipedia.org/wiki/Android_(operating_system)" target="_blank" rel="noopener noreferrer">Android</a>), and supercomputers.
+            <br>
+            <br>
+            5. Architectural Structure and Place in the Global Ecosystem
+            <br>
+            While <a href="https://en.wikipedia.org/wiki/Linux" target="_blank" rel="noopener noreferrer">Linux</a> has a <a href="https://en.wikipedia.org/wiki/Monolithic_kernel" target="_blank" rel="noopener noreferrer">monolithic kernel</a> architecture, it exhibits an extremely flexible structure thanks to dynamically loadable driver modules. Thanks to its <a href="https://en.wikipedia.org/wiki/Unix" target="_blank" rel="noopener noreferrer">Unix</a>-like design, it delivers high performance, stability, and security.
+            <br>
+            Today, the Linux kernel serves as the backbone;
+            <br>
+            - In nearly all of the world's supercomputers,
+            <br>
+            - In billions of smartphones (on an <a href="https://en.wikipedia.org/wiki/Android_(operating_system)" target="_blank" rel="noopener noreferrer">Android</a>-based infrastructure),
+            <br>
+            - In global cloud servers, web infrastructures, and embedded systems.
+        </p>
+    </section>
+    
+    <section class="lowsection">
+        <br>
+    </section>
+
+    <section class="footersection">
+        <p>Copyright © 2026 Grass Project Team. All Rights Reserved.</p>
+    </section>
+</body>
+</html>
