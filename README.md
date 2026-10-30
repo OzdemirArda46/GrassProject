@@ -2,25 +2,25 @@
 
 ## Release Timeline
 
-### **September 17, 2024** - GrassProject 0.01
+### **September 17, 2026** - GrassProject 0.01
 
 > **Status:** Initial Foundation
 >
 > **Summary:** The Elementary library of the Enlightenment Foundation Libraries (EFL) was successfully abstracted at a fundamental, baseline level.
 
-### **September 20, 2024** - GrassProject 0.02
+### **September 20, 2026** - GrassProject 0.02
 
 > **Status:** Expansion Phase
 >
 > **Summary:** Over half of the Elementary library was abstracted, making significant progress toward a comprehensive wrapper, though the integration process remained ongoing.
 
-### **September 27, 2024** - GrassProject 0.03
+### **September 27, 2026** - GrassProject 0.03
 
 > **Status:** Robust Abstraction
 >
 > **Summary:** Refined to meet **99%** of the Elementary needs for **90 out of 100 projects**. Implementation and abstraction for **Evas** reached a near-identical level of maturity and coverage.
 
-### **October 18, 2024** - GrassProject 0.1
+### **October 18, 2026** - GrassProject 0.1
 
 > **Status:** Milestone Core Release
 >
