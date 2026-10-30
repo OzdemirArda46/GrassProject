@@ -36,7 +36,7 @@
 >
 > **Summary:** Resolved missing function bindings across the framework and fully refreshed the developer guides. File names and structures were sanitized for improved project organization. The necessity to manually rely on legacy `elm_` and `evas_` functions has been significantly reduced, streamlining the overall API footprint.
 >
-![Sample Image](Image_Sample0.2.png)
+![Sample Image](Image_Sample0.2.jpg)
 
 
 ## Summary of Core Coverage
