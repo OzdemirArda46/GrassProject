@@ -27,6 +27,9 @@
 > **Status:** Milestone Core Release
 >
 > **Summary:** The **Ecore** library was fully abstracted. Combined with Elementary, Evas, and Ecore, the framework now fulfills **99%** of the combined library needs for **90 out of 100 projects** from our perspective. Syntax was polished for clarity, and a brand-new developer guide was introduced.
+>
+> ![Görsel Açıklaması](Image_Sample.png)
+
 
 ![Sample Image](Image_Sample0.1.png)
 
